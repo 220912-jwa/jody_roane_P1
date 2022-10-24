@@ -15,7 +15,7 @@ import java.time.Duration;
 
 public class ApproveClaimSteps {
     WebDriver driver = EndToEndRunner.driver;
-    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(1));
+    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     @Given("The manager is logged in as manager.")
     public void the_manager_is_logged_in_as_manager() {
         String title = driver.getTitle();

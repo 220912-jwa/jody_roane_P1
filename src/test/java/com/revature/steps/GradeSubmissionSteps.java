@@ -15,7 +15,7 @@ import java.time.Duration;
 
 public class GradeSubmissionSteps {
     WebDriver driver = EndToEndRunner.driver;
-    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(3));
+    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     @Given("The associate is logged in as associate.")
     public void the_associate_is_logged_in_as_associate() {
         System.out.println("The associate is logged in as associate.");

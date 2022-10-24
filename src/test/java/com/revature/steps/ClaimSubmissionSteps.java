@@ -18,7 +18,7 @@ import java.time.Duration;
 
 public class ClaimSubmissionSteps {
     WebDriver driver = EndToEndRunner.driver;
-    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(3));
+    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     @Given("The associate is on the Home page.")
     public void the_associate_is_on_the_home_page() {
         System.out.println("The associate is on the Home page.");

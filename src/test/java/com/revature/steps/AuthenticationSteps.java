@@ -15,7 +15,7 @@ import java.time.Duration;
 
 public class AuthenticationSteps {
     WebDriver driver = EndToEndRunner.driver;
-    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(1));
+    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     @Given("The employee is on the login page.")
     public void the_employee_is_on_the_login_page() {
         System.out.println("The employee is on the login page.");
