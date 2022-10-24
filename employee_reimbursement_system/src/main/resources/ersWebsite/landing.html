@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+    <div id = "div links">
+
+    </div>
+    <div id = "div 2">
+        <h1 id = "h1 1">
+
+        </h1>
+        <h1 id = "h1 2">
+
+        </h1>
+        <p id = "p 1">
+
+        </p>
+    </div>
+    <div>
+        <Button onclick="getReimbursementForm()">Get Reimbursement Form</Button>
+    </div>
+    <div id = "div claim form">
+        <h2>
+            Reimbursement Submission Form
+        </h2>
+        <table id = "table 1">
+            <tr id = "tr 1">
+                <th id = "th 1">
+                    Event
+                </th>
+                <th id = "th 2">
+                    Description
+                </th>
+                <th id = "th 3">
+                    Location
+                </th>
+            </tr>
+            <tr id = "tr 2">
+                <td id = "td 1">
+                    <select id = "select 1">
+                        <option name = "100">
+                            Certification
+                        </option>
+                        <option name = "90">
+                            Technical Training
+                        </option>
+                        <option name = "80">
+                            University Courses
+                        </option>
+                        <option name = "75">
+                            Certification Prep
+                        </option>
+                        <option name = "60">
+                            Seminars
+                        </option>
+                        <option name = "30">
+                            Other 
+                        </option>
+                    </select>
+                </td>
+                <td id = "td 2">
+                    <input id = "input 2" type = "text"/>
+                </td>
+                <td id = "td 3">
+                    <input id = "input 3" type = "text"/>
+                </td>
+            </tr>
+            <tr id = "tr 3">
+                <th id = "th 4">
+                    Cost
+                </th>
+                <th id = "th 5">
+                    Reimbursement
+                </th>
+                <th id = "th 6">
+                    Start Date
+                </th>
+
+            </tr>
+            <tr id = "tr 4">
+                <td id = "td 4">
+                    <input id = "cost input" type = "number"/>
+                </td>
+                <td id = "td 5">
+                    <p id= "reimbursement">0.00</p>
+                </td>
+                <td id = "td 6">
+                    <input id = "date 1" type = "Date"/>
+                </td>
+            </tr>
+            <tr id = "tr 5">
+                <th id = "th 7">
+                    End Date
+                </th>
+                <th id = "th 8">
+                    Passing Grade
+                </th>
+                <th id = "th 9">
+                    Final Grade
+                </th>
+            </tr>
+            <tr id = "tr 6">
+                <td id = "td 7">
+                    <input id = "date 2" type = "Date"/>
+                </td>
+                <td id = "td 8">
+                    <select id = "select 2">
+                        <option name = "Unknown 1">
+                            Unknown
+                        </option>
+                        <option name = "Passed 1">
+                            Passed
+                        </option>
+                        <option name = "A 1">
+                            A
+                        </option>
+                        <option name = "B 1">
+                            B
+                        </option>
+                        <option name = "C 1">
+                            C
+                        </option>
+                        <option name = "D 1">
+                            D
+                        </option>
+                    </select>
+                </td>
+                <td id = "td 9">
+                    <select id = "select 3">
+                        <option name = "Unknown 2">
+                            Unknown
+                        </option>
+                        <option name = "Passed 2">
+                            Passed
+                        </option>
+                        <option name = "A 2">
+                            A
+                        </option>
+                        <option name = "B 2">
+                            B
+                        </option>
+                        <option nane = "C 2">
+                            C
+                        </option>
+                        <option name = "D 2">
+                            D
+                        </option>
+                        <option name = "F 2">
+                            F
+                        </option>
+                        <option name = "Failed 2">
+                            Failed
+                        </option>
+                    </select>
+                </td>
+            </tr>
+            <tr id = "tr 7">
+                <th id = "th 10">
+                </th>
+                <th id = "th 12">
+                    <button id = "button 1" onclick="calculateReimbursement()">
+                        Calculate Reimbursement
+                    </button>
+                    <br>
+                    <button id = "button 2" disabled onclick = "checkSubmission()">
+                        Submit Reimbursement
+                    </button>
+                </th>
+                <th id = "th 12">
+                    
+                </th>
+            </tr>
+        </table>
+    </div>
+    <div id = "get claims for approval button">
+        <button id = "finance only" onclick = "getAllClaimsForApproval()">Get Claims Seeking Approval</button>
+    </div>
+    <div id="claims table div">
+        <h2>
+            Reimbursement Claims Seeking Aproval
+        </h2>
+        <table id = "claims table">
+                <tbody id = "claims header tbody">
+                <tr id = "tr claims 1">
+                    <th id = "th claim id">
+                        Claim ID
+                    </th>
+                    <th id = "th first name">
+                        First Name
+                    </th>
+                    <th id = "th last name">
+                        Last Name
+                    </th>
+                    <th id = "th claim status">
+                        Claim Status
+                    </th>
+                    <th id = "th select claim button">
+                        Claim Selector
+                    </th>
+                </tr>
+            </tbody>
+            <tbody id = 'claims seeking approval info'>
+
+            </tbody>
+        </table>
+    </div>
+    <div id = "approval form div">
+        <h2>
+            Reimbursement Approval Form
+        </h2>
+        <table id = "approval form">
+            <tr id = "tr approv form 1">
+                <th id = "th claim id">
+                    First Name
+                </th>
+                <th id = "th first name">
+                    Last Name
+                </th>
+                <th id = "th last name">
+                    Event
+                </th>
+                <th id = "th claim status">
+                    Description
+                </th>
+                <th id = "Passing ">
+                    Passing Grade
+                </th>
+            </tr>
+            <tbody id = "claim info 1">
+
+            </tbody>
+            <tr id = "tr approval form  3">
+                <th id = "th claim id">
+                    Cost
+                </th>
+                <th id = "th first name">
+                    Balance
+                </th>
+                <th id = "th last name">
+                    Reimbursement
+                </th>
+                <th id = "th claim status">
+                    End Date
+                </th>      
+                <th id = "th first name">
+                    Final Grade
+                </th>
+            </tr>
+            <tbody id = "claim info 2">
+
+            </tbody>
+            <tr id = "tr approval form  5">
+                <th id = "th last name">
+
+                </th>
+
+                <th id = "th last name">
+                    Claim Status
+                </th>
+                <th>
+                    Reimbursement Adjusment
+                </th>
+                <th id = "th claim status">
+                    Award Status
+                </th>
+                <th id = "th last name">
+
+                </th>
+            </tr>
+            <tr id = "tr adjustment options">
+                <td>
+ 
+
+                </td>
+                <td>
+                    <select id = "select adjustment options">
+                        <option >
+                            Select an Option
+                        </option>
+                        <option id = "1">
+                            Urgent: Needs Passing Grade
+                        </option>
+                        <option id = "2">
+                            Pending Approval
+                        </option>
+                        <option id = "5">
+                            Approved
+                        </option>
+                        <option name = "3">
+                            Awarded
+                        </option>
+                        <option name = "4">
+                            Cancelled
+                        </option>
+                    </select>
+                </td>
+                <td>
+                    <label for = "reimbursement adjustemnt">Reimbursement Adjusment</label>
+                    <br>
+                    <input id = "adjustment" type = "number" />
+                    <br>
+                    <label for = "adjustemnt reason">Adjustment Reason</label>
+                    <br>
+                    <input id = "adjustemnt reason" type = "text"/>
+                    <br>
+                    <button id = "submit adjustment" onclick="adjustReimbursement()">
+                        Submit Adjustment
+                    </button> 
+                </td>
+                <td>
+                    <input id= "award status" type ="checkbox"/>
+                </td>
+                <td>
+
+                </td>
+            </tr>
+            <tr id = "tr adjustment options">
+                <td>
+ 
+                </td>
+                <td>
+
+                </td>
+                <td>
+                    <button id = "update button">
+                        Submit Claim Update
+                    </button>
+
+                </td>
+                <td>
+
+                </td>
+                <td>
+
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id = "get pending claims button div">
+        <button id = "get pending claims button">Get Pending Claims</button>
+
+    </div>
+    <div id = "pending claims table div">
+        <h2>
+            Pending Claims
+        </h2>
+        <table Id = "pending claims table">
+            <tr id = "pending claims header tr">
+                <th id = >
+                    Claim ID
+                </th>
+                <th id = >
+                    FirstName
+                </th>
+                <th id = >
+                    LastName
+                </th>
+                <th id = >
+                    Claim Status
+                </th>
+                <th id = >
+                    Claim Selector
+                </th>
+            </tr>
+            <tbody id = "pending claims tbody">
+
+            </tbody>
+        </table>
+    </div>
+    <div id = "final grade form">
+        <h2>
+            Final Grade Form
+        </h2>
+        <table id = "final grade table">
+            <tr id = "final grade form header tr">
+                <th id = "th claim id">
+                    First Name
+                </th>
+                <th id = "th first name">
+                    Last Name
+                </th>
+                <th id = "th last name">
+                    Event
+                </th>
+                <th id = "th claim status">
+                    Description
+                </th>
+            </tr>
+            <tbody id = "pending claim info 1">
+
+            </tbody>
+            <tr id = "tr approval form  3">
+                <th id = "th claim id">
+                    Cost
+                </th>
+                <th id = "th last name">
+                    Reimbursement
+                </th>
+                <th id = "th claim status">
+                    End Date
+                </th> 
+                <th id = "Passing ">
+                    <p id = "p passing grade">Passing Grade</p>
+
+    
+                </th>     
+            </tr>
+            <tbody id = "pending claim info 2">
+
+            </tbody>
+        </table>
+            <table>
+            <tr id = "tr adjustment options">
+
+                <th>
+                </th>
+                <th>
+                    Final Grade
+                </th>
+            
+                    <th id >
+                        <div id ="unknown only 1">
+                            <p>Select Passing Grade</p>
+                        </div>
+
+                    </th>
+           
+            </tr>
+            <tr id = "tr submit button">
+                <td>
+
+                </td>
+                <td>
+                    <select id = "final grade selector">
+                        <option>
+                            Unknown
+                        </option>
+                        <option>
+                            Passed
+                        </option>
+                        <option>
+                            A
+                        </option>
+                        <option>
+                            B
+                        </option>
+                        <option>
+                            C
+                        </option>
+                        <option>
+                            D
+                        </option>
+                        <option>
+                            F
+                        </option>
+                        <option>
+                            Failed
+                        </option>
+                    </select>
+                    <br>
+                    <button id = "update button 2" onclick="updatePendingClaimById()">
+                        Submit Final Grade
+                    </button>
+                </td>
+                <td>
+                    <div id ="unknown only 2">
+                        <select id="passing grade selector">
+                            <option>Passed</option>
+                            <option>A</option>
+                            <option>B</option>
+                            <option>C</option>
+                            <option>D</option>
+                        </select>
+                    </div>
+
+                </td>
+            </tr>
+        </table>
+    </div>
+    </body>
+    <script src ="js/script.js"> </script>
+    <script>
+        window.onload = loadLandingPage()
+    </script>
+</body>
+</html>
