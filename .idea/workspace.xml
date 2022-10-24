@@ -5,42 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f2e992e8-ecb5-49d9-aba7-495acfd8d3c9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/revature/employeeReimbursementSystem/appDriver/AppDriver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/revature/employeeReimbursementSystem/controllers/AccountController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/revature/employeeReimbursementSystem/controllers/AuthenticationController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/revature/employeeReimbursementSystem/controllers/ClaimController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/revature/employeeReimbursementSystem/dataAccessObjects/AccountDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/revature/employeeReimbursementSystem/dataAccessObjects/ClaimDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/revature/employeeReimbursementSystem/dataAccessObjects/EmployeeDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/revature/employeeReimbursementSystem/dataAccessObjects/OptionDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/revature/employeeReimbursementSystem/entities/Account.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/revature/employeeReimbursementSystem/entities/Claim.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/revature/employeeReimbursementSystem/entities/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/revature/employeeReimbursementSystem/entities/Option.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/revature/employeeReimbursementSystem/services/AccountService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/revature/employeeReimbursementSystem/services/AuthenticationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/revature/employeeReimbursementSystem/services/ClaimService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/revature/employeeReimbursementSystem/utilities/ConnectionUtility.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/ersWebsite/js/script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/ersWebsite/landing.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/ersWebsite/portal.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/revature/runners/EndToEndRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/revature/steps/ApproveClaimSteps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/revature/steps/AuthenticationSteps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/revature/steps/ClaimSubmissionSteps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/revature/steps/GradeSubmissionSteps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/drivers/chromedriver.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/1authentication.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/2claim-submission.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/3grade-submission.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/4approve-claim.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,16 +36,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/jorot/OneDrive/Desktop/training-repos/jody_roane_P1/jody_roane_P1",
-    "settings.editor.selected.configurable": "project.propDebugger"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/jorot/OneDrive/Desktop/training-repos/jody_roane_P1/jody_roane_P1&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propDebugger&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\jorot\OneDrive\Desktop\training-repos\jody_roane_P1\src\test\resources" />
@@ -94,7 +59,7 @@
       <recent name="com.revature" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Cucumber Java.Feature: approve-claim">
     <configuration name="Feature: approve-claim" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/approve-claim.feature" />
